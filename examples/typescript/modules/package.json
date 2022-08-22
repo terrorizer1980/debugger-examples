@@ -2,10 +2,14 @@
   "dependencies": {
     "ts-loader": "^4.1.0",
     "typescript": "^2.7.2",
-    "webpack": "^4.2.0",
-    "webpack-cli": "^2.0.13"
+    "webpack": "^4.26.0",
+    "webpack-cli": "^3.3.5",
+    "@snyk/protect": "latest"
   },
   "scripts": {
-    "build": "webpack"
-  }
+    "build": "webpack",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
