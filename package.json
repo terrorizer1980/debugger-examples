@@ -4,7 +4,9 @@
   "description": "Collection of good pages to debug",
   "scripts": {
     "start": "node bin/server",
-    "build": "webpack"
+    "build": "webpack",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "url": "git@github.com:jasonLaster/debugger-examples.git",
@@ -16,10 +18,12 @@
     "babel-loader": "^7.1.2",
     "express": "^4.14.0",
     "serve-index": "^1.8.0",
-    "webpack": "^3.7.1"
+    "webpack": "^3.7.1",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1"
-  }
+  },
+  "snyk": true
 }
