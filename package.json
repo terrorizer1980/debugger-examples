@@ -13,10 +13,10 @@
   "author": "Jason Laster <jason.laster.11@gmail.com>",
   "license": "CC0-1.0",
   "dependencies": {
-    "babel-loader": "^7.1.2",
+    "babel-loader": "^9.0.0",
     "express": "^4.14.0",
     "serve-index": "^1.8.0",
-    "webpack": "^3.7.1"
+    "webpack": "^5.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
